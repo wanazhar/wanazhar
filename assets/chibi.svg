@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480">
+  <defs>
+    <linearGradient id="hair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bda7fb"/>
+      <stop offset="1" stop-color="#8a67e8"/>
+    </linearGradient>
+    <linearGradient id="eye" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b6fd8"/>
+      <stop offset="0.55" stop-color="#3fc6d8"/>
+      <stop offset="1" stop-color="#c9f2f6"/>
+    </linearGradient>
+    <linearGradient id="hoodie" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#93f2d8"/>
+      <stop offset="1" stop-color="#58d2ae"/>
+    </linearGradient>
+    <path id="spark" d="M 0 -14 L 3.5 -3.5 L 14 0 L 3.5 3.5 L 0 14 L -3.5 3.5 L -14 0 L -3.5 -3.5 Z"/>
+  </defs>
+
+  <!-- twin tails -->
+  <ellipse cx="98" cy="288" rx="46" ry="82" transform="rotate(16 98 288)" fill="url(#hair)" stroke="#46395e" stroke-width="7"/>
+  <ellipse cx="382" cy="288" rx="46" ry="82" transform="rotate(-16 382 288)" fill="url(#hair)" stroke="#46395e" stroke-width="7"/>
+
+  <!-- hair back -->
+  <circle cx="240" cy="205" r="140" fill="url(#hair)" stroke="#46395e" stroke-width="7"/>
+
+  <!-- cat ears -->
+  <path d="M 152 90 L 178 22 L 236 76 Z" fill="url(#hair)" stroke="#46395e" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M 168 82 L 182 44 L 212 74 Z" fill="#ffb7d5"/>
+  <path d="M 328 90 L 302 22 L 244 76 Z" fill="url(#hair)" stroke="#46395e" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M 312 82 L 298 44 L 268 74 Z" fill="#ffb7d5"/>
+
+  <!-- ahoge -->
+  <path d="M 240 88 C 244 50 264 34 284 42" fill="none" stroke="#8a67e8" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- head -->
+  <circle cx="240" cy="215" r="118" fill="#ffe7d6" stroke="#46395e" stroke-width="7"/>
+
+  <!-- bangs -->
+  <path d="M 126 208 C 120 122 174 82 240 82 C 306 82 360 122 354 208 L 332 172 Q 322 214 300 176 Q 288 216 262 178 Q 248 218 224 180 Q 206 216 184 178 Q 166 214 148 172 Z" fill="url(#hair)" stroke="#46395e" stroke-width="7" stroke-linejoin="round"/>
+
+  <!-- eyes -->
+  <ellipse cx="192" cy="240" rx="28" ry="34" fill="#2f2748"/>
+  <ellipse cx="288" cy="240" rx="28" ry="34" fill="#2f2748"/>
+  <ellipse cx="192" cy="245" rx="21" ry="26" fill="url(#eye)"/>
+  <ellipse cx="288" cy="245" rx="21" ry="26" fill="url(#eye)"/>
+  <circle cx="183" cy="229" r="10" fill="#ffffff"/>
+  <circle cx="279" cy="229" r="10" fill="#ffffff"/>
+  <circle cx="201" cy="256" r="5" fill="#ffffff" opacity="0.9"/>
+  <circle cx="297" cy="256" r="5" fill="#ffffff" opacity="0.9"/>
+
+  <!-- blush -->
+  <ellipse cx="148" cy="272" rx="26" ry="13" fill="#ff9fb8" opacity="0.8"/>
+  <ellipse cx="332" cy="272" rx="26" ry="13" fill="#ff9fb8" opacity="0.8"/>
+
+  <!-- cat mouth -->
+  <path d="M 224 284 q 8 10 16 0 q 8 10 16 0" stroke="#a2495e" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- torso -->
+  <path d="M 150 480 L 150 402 Q 150 330 240 330 Q 330 330 330 402 L 330 480 Z" fill="url(#hoodie)" stroke="#46395e" stroke-width="7"/>
+  <path d="M 198 342 Q 240 372 282 342" stroke="#46395e" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <line x1="222" y1="356" x2="216" y2="408" stroke="#3fae8d" stroke-width="6" stroke-linecap="round"/>
+  <line x1="258" y1="356" x2="264" y2="408" stroke="#3fae8d" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="216" cy="414" r="6" fill="#3fae8d"/>
+  <circle cx="264" cy="414" r="6" fill="#3fae8d"/>
+  <path d="M 240 452 c -10 -10 -20 -18 -20 -28 c 0 -8 6 -13 13 -13 c 4 0 7 2 7 5 c 0 -3 3 -5 7 -5 c 7 0 13 5 13 13 c 0 10 -10 18 -20 28 Z" fill="#ff8fab"/>
+
+  <!-- left arm (resting) -->
+  <path d="M 162 372 Q 146 402 150 434" stroke="#46395e" stroke-width="46" fill="none" stroke-linecap="round"/>
+  <path d="M 162 372 Q 146 402 150 434" stroke="url(#hoodie)" stroke-width="34" fill="none" stroke-linecap="round"/>
+  <circle cx="150" cy="440" r="24" fill="#ffe7d6" stroke="#46395e" stroke-width="6"/>
+
+  <!-- right arm (waving) -->
+  <path d="M 322 368 Q 400 330 412 202" stroke="#46395e" stroke-width="46" fill="none" stroke-linecap="round"/>
+  <path d="M 322 368 Q 400 330 412 202" stroke="url(#hoodie)" stroke-width="34" fill="none" stroke-linecap="round"/>
+  <circle cx="414" cy="188" r="24" fill="#ffe7d6" stroke="#46395e" stroke-width="6"/>
+
+  <!-- sparkles -->
+  <use href="#spark" transform="translate(66 104) scale(1)" fill="#fff1a8"/>
+  <use href="#spark" transform="translate(408 84) scale(0.85)" fill="#ffd1e8"/>
+  <use href="#spark" transform="translate(444 172) scale(0.65)" fill="#bfe9ff"/>
+  <use href="#spark" transform="translate(52 240) scale(0.75)" fill="#d8ccff"/>
+</svg>

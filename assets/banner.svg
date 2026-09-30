@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 400" width="1500" height="400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe3f2"/>
+      <stop offset="0.5" stop-color="#e9e2ff"/>
+      <stop offset="1" stop-color="#dff2ff"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="h1hair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bda7fb"/>
+      <stop offset="1" stop-color="#8a67e8"/>
+    </linearGradient>
+    <linearGradient id="h1eye" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b6fd8"/>
+      <stop offset="0.55" stop-color="#3fc6d8"/>
+      <stop offset="1" stop-color="#c9f2f6"/>
+    </linearGradient>
+    <linearGradient id="h1hoodie" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#93f2d8"/>
+      <stop offset="1" stop-color="#58d2ae"/>
+    </linearGradient>
+    <linearGradient id="h2hair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffc9e2"/>
+      <stop offset="1" stop-color="#ff9dc9"/>
+    </linearGradient>
+    <linearGradient id="h2eye" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b34fd8"/>
+      <stop offset="0.55" stop-color="#e07ff0"/>
+      <stop offset="1" stop-color="#f6d9fb"/>
+    </linearGradient>
+    <path id="spark" d="M 0 -14 L 3.5 -3.5 L 14 0 L 3.5 3.5 L 0 14 L -3.5 3.5 L -14 0 L -3.5 -3.5 Z"/>
+    <path id="petal" d="M 0 0 C 8 -12 22 -14 30 -6 C 27 8 12 14 2 9 Z"/>
+    <style>
+      @keyframes drift { 0% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-16px) rotate(10deg); } 100% { transform: translateY(0) rotate(0deg); } }
+      @keyframes twinkle { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+      .drift { animation: drift 6s ease-in-out infinite; transform-origin: center; }
+      .drift2 { animation: drift 8s ease-in-out infinite; transform-origin: center; }
+      .twinkle { animation: twinkle 3s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <rect width="1500" height="400" fill="url(#sky)"/>
+  <circle cx="770" cy="180" r="190" fill="url(#glow)"/>
+  <circle cx="120" cy="330" r="90" fill="#ffffff" opacity="0.35"/>
+  <circle cx="1420" cy="80" r="70" fill="#ffffff" opacity="0.35"/>
+  <circle cx="960" cy="330" r="46" fill="#ffffff" opacity="0.3"/>
+  <circle cx="520" cy="60" r="34" fill="#ffffff" opacity="0.4"/>
+
+  <!-- clouds -->
+  <g fill="#ffffff" opacity="0.75">
+    <g transform="translate(430 90)">
+      <circle cx="0" cy="0" r="24"/><circle cx="30" cy="-14" r="30"/><circle cx="64" cy="-2" r="22"/>
+      <rect x="-8" y="-4" width="84" height="26" rx="13"/>
+    </g>
+    <g transform="translate(1010 60) scale(0.8)">
+      <circle cx="0" cy="0" r="24"/><circle cx="30" cy="-14" r="30"/><circle cx="64" cy="-2" r="22"/>
+      <rect x="-8" y="-4" width="84" height="26" rx="13"/>
+    </g>
+  </g>
+
+  <!-- petals -->
+  <g class="drift"><use href="#petal" transform="translate(180 120) rotate(-20) scale(1.1)" fill="#ffc6dd"/></g>
+  <g class="drift2"><use href="#petal" transform="translate(560 260) rotate(15) scale(0.9)" fill="#ffd7e8"/></g>
+  <g class="drift"><use href="#petal" transform="translate(930 140) rotate(35) scale(1)" fill="#ffc6dd"/></g>
+  <g class="drift2"><use href="#petal" transform="translate(1005 300) rotate(-10) scale(0.8)" fill="#ffd7e8"/></g>
+  <g class="drift"><use href="#petal" transform="translate(660 80) rotate(60) scale(0.75)" fill="#ffe3f0"/></g>
+  <g class="drift2"><use href="#petal" transform="translate(120 250) rotate(-40) scale(0.9)" fill="#ffd7e8"/></g>
+
+  <!-- sparkles -->
+  <use class="twinkle" href="#spark" transform="translate(640 190) scale(0.85)" fill="#fff1a8"/>
+  <use class="twinkle" href="#spark" transform="translate(918 230) scale(1)" fill="#ffd1e8"/>
+  <use class="twinkle" href="#spark" transform="translate(1120 70) scale(0.7)" fill="#bfe9ff"/>
+  <use class="twinkle" href="#spark" transform="translate(210 60) scale(0.75)" fill="#d8ccff"/>
+  <use class="twinkle" href="#spark" transform="translate(1420 300) scale(0.65)" fill="#ffd1e8"/>
+
+  <!-- name -->
+  <text x="770" y="205" text-anchor="middle" font-family="'Comic Sans MS','Comic Neue','Chalkboard SE','Segoe UI',sans-serif" font-size="92" font-weight="bold" fill="#ffffff" stroke="#7a5cd6" stroke-width="9" paint-order="stroke" letter-spacing="3">wanazhar</text>
+  <text x="770" y="258" text-anchor="middle" font-family="'Comic Sans MS','Comic Neue','Chalkboard SE','Segoe UI',sans-serif" font-size="26" fill="#8a67e8" letter-spacing="6">(｡•̀ᴗ-)✧ ようこそ ✧(◕‿◕)</text>
+
+  <!-- peeking chibi -->
+  <g>
+    <circle cx="300" cy="352" r="92" fill="url(#h2hair)" stroke="#46395e" stroke-width="7"/>
+    <path d="M 232 286 L 252 230 L 298 276 Z" fill="url(#h2hair)" stroke="#46395e" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M 246 278 L 256 246 L 284 274 Z" fill="#ffe1ef"/>
+    <path d="M 368 286 L 348 230 L 302 276 Z" fill="url(#h2hair)" stroke="#46395e" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M 354 278 L 344 246 L 316 274 Z" fill="#ffe1ef"/>
+    <path d="M 300 276 C 300 252 312 240 330 246" fill="none" stroke="#ff9dc9" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="300" cy="356" r="80" fill="#ffe7d6" stroke="#46395e" stroke-width="6"/>
+    <path d="M 224 356 C 220 300 254 272 300 272 C 346 272 380 300 376 356 L 362 328 Q 354 358 342 326 Q 332 358 318 324 Q 308 360 296 324 Q 284 358 272 326 Q 260 358 248 326 Q 238 356 224 356 Z" fill="url(#h2hair)" stroke="#46395e" stroke-width="6" stroke-linejoin="round"/>
+    <ellipse cx="266" cy="352" rx="20" ry="25" fill="#3a2b48"/>
+    <ellipse cx="334" cy="352" rx="20" ry="25" fill="#3a2b48"/>
+    <ellipse cx="266" cy="355" rx="15" ry="19" fill="url(#h2eye)"/>
+    <ellipse cx="334" cy="355" rx="15" ry="19" fill="url(#h2eye)"/>
+    <circle cx="259" cy="344" r="7" fill="#ffffff"/>
+    <circle cx="327" cy="344" r="7" fill="#ffffff"/>
+    <ellipse cx="232" cy="376" rx="18" ry="10" fill="#ff9fb8" opacity="0.85"/>
+    <ellipse cx="368" cy="376" rx="18" ry="10" fill="#ff9fb8" opacity="0.85"/>
+    <path d="M 288 386 q 6 8 12 0 q 6 8 12 0" stroke="#a2495e" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- main chibi -->
+  <g transform="translate(1085 2) scale(0.83)">
+    <ellipse cx="98" cy="288" rx="46" ry="82" transform="rotate(16 98 288)" fill="url(#h1hair)" stroke="#46395e" stroke-width="7"/>
+    <ellipse cx="382" cy="288" rx="46" ry="82" transform="rotate(-16 382 288)" fill="url(#h1hair)" stroke="#46395e" stroke-width="7"/>
+    <circle cx="240" cy="205" r="140" fill="url(#h1hair)" stroke="#46395e" stroke-width="7"/>
+    <path d="M 152 90 L 178 22 L 236 76 Z" fill="url(#h1hair)" stroke="#46395e" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M 168 82 L 182 44 L 212 74 Z" fill="#ffb7d5"/>
+    <path d="M 328 90 L 302 22 L 244 76 Z" fill="url(#h1hair)" stroke="#46395e" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M 312 82 L 298 44 L 268 74 Z" fill="#ffb7d5"/>
+    <path d="M 240 88 C 244 50 264 34 284 42" fill="none" stroke="#8a67e8" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="240" cy="215" r="118" fill="#ffe7d6" stroke="#46395e" stroke-width="7"/>
+    <path d="M 126 208 C 120 122 174 82 240 82 C 306 82 360 122 354 208 L 332 172 Q 322 214 300 176 Q 288 216 262 178 Q 248 218 224 180 Q 206 216 184 178 Q 166 214 148 172 Z" fill="url(#h1hair)" stroke="#46395e" stroke-width="7" stroke-linejoin="round"/>
+    <ellipse cx="192" cy="240" rx="28" ry="34" fill="#2f2748"/>
+    <ellipse cx="288" cy="240" rx="28" ry="34" fill="#2f2748"/>
+    <ellipse cx="192" cy="245" rx="21" ry="26" fill="url(#h1eye)"/>
+    <ellipse cx="288" cy="245" rx="21" ry="26" fill="url(#h1eye)"/>
+    <circle cx="183" cy="229" r="10" fill="#ffffff"/>
+    <circle cx="279" cy="229" r="10" fill="#ffffff"/>
+    <circle cx="201" cy="256" r="5" fill="#ffffff" opacity="0.9"/>
+    <circle cx="297" cy="256" r="5" fill="#ffffff" opacity="0.9"/>
+    <ellipse cx="148" cy="272" rx="26" ry="13" fill="#ff9fb8" opacity="0.8"/>
+    <ellipse cx="332" cy="272" rx="26" ry="13" fill="#ff9fb8" opacity="0.8"/>
+    <path d="M 224 284 q 8 10 16 0 q 8 10 16 0" stroke="#a2495e" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M 150 480 L 150 402 Q 150 330 240 330 Q 330 330 330 402 L 330 480 Z" fill="url(#h1hoodie)" stroke="#46395e" stroke-width="7"/>
+    <path d="M 198 342 Q 240 372 282 342" stroke="#46395e" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <line x1="222" y1="356" x2="216" y2="408" stroke="#3fae8d" stroke-width="6" stroke-linecap="round"/>
+    <line x1="258" y1="356" x2="264" y2="408" stroke="#3fae8d" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="216" cy="414" r="6" fill="#3fae8d"/>
+    <circle cx="264" cy="414" r="6" fill="#3fae8d"/>
+    <path d="M 240 452 c -10 -10 -20 -18 -20 -28 c 0 -8 6 -13 13 -13 c 4 0 7 2 7 5 c 0 -3 3 -5 7 -5 c 7 0 13 5 13 13 c 0 10 -10 18 -20 28 Z" fill="#ff8fab"/>
+    <path d="M 162 372 Q 146 402 150 434" stroke="#46395e" stroke-width="46" fill="none" stroke-linecap="round"/>
+    <path d="M 162 372 Q 146 402 150 434" stroke="url(#h1hoodie)" stroke-width="34" fill="none" stroke-linecap="round"/>
+    <circle cx="150" cy="440" r="24" fill="#ffe7d6" stroke="#46395e" stroke-width="6"/>
+    <path d="M 322 368 Q 400 330 412 202" stroke="#46395e" stroke-width="46" fill="none" stroke-linecap="round"/>
+    <path d="M 322 368 Q 400 330 412 202" stroke="url(#h1hoodie)" stroke-width="34" fill="none" stroke-linecap="round"/>
+    <circle cx="414" cy="188" r="24" fill="#ffe7d6" stroke="#46395e" stroke-width="6"/>
+  </g>
+</svg>
